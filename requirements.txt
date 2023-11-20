@@ -1,0 +1,10 @@
+torch
+wandb
+matplotlib
+accelerate
+datasets
+huggingface_hub
+Pillow
+torchvision
+tqdm
+diffusers
