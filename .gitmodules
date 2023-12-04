@@ -1,3 +1,0 @@
-[submodule "source/diffusers"]
-	path = source/diffusers
-	url = https://github.com/huggingface/diffusers.git
