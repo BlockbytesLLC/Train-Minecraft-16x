@@ -16,8 +16,4 @@ accelerate launch train.py \
   --lr_scheduler="constant" --lr_warmup_steps=0 \
   --output_dir="sd-minecraft-16x" \
   --dataloader_num_workers=8 \
-  --report_to="wandb" \
-  --num_processes=0 \
-  --num_machines=1 \
-  --mixed_precision="no" \
-  --dynamo_backend="no"
+  --report_to="wandb"
