@@ -6,7 +6,7 @@ accelerate launch train.py \
   --dataset_name=$dataset_name \
   --use_ema \
   --resolution=128 --center_crop \
-  --train_batch_size=4 \
+  --train_batch_size=2 \
   --gradient_accumulation_steps=4 \
   --gradient_checkpointing \
   --mixed_precision="fp16" \
