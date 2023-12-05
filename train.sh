@@ -6,14 +6,15 @@ accelerate launch train.py \
   --dataset_name=$dataset_name \
   --use_ema \
   --resolution=128 --center_crop \
-  --train_batch_size=2 \
-  --gradient_accumulation_steps=4 \
+  --train_batch_size=4 \
+  --gradient_accumulation_steps=2 \
   --gradient_checkpointing \
   --mixed_precision="fp16" \
-  --max_train_steps=15000 \
+  --max_train_steps=10000 \
   --learning_rate=2e-05 \
   --max_grad_norm=1 \
-  --lr_scheduler="constant" --lr_warmup_steps=0 \
+  --lr_scheduler="cosine_with_restarts" \
+  --lr_warmup_steps=500 \
   --output_dir="sd-minecraft-16x" \
   --dataloader_num_workers=8 \
   --report_to="wandb"
